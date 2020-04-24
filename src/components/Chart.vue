@@ -19,7 +19,7 @@
             </thead>
             <tbody>
                 <template v-for="data in dataAPILive.table">
-                    <tr :key="data.USAState" data-toggle="modal" data-target="#dataChart" :data-province="data.USAState" v-on:click="getModal(data.USAState)">
+                    <tr :key="data.USAState" data-toggle="modal" data-target="#dataChart" :data-province="data.USAState" data-backdrop="false" v-on:click="getModal(data.USAState)">
                         <td>{{ data.USAState }}</td>
                         <td>{{ data.TotalCases }}</td>
                         <td>{{ data.NewCases }}</td>

@@ -35,4 +35,9 @@ html {
   background-color: #f0f6ff;
 }
 
+.modal-backdrop {
+    /* bug fix - no overlay */    
+    display: none;    
+}
+
 </style>
